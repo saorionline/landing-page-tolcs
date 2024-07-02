@@ -1,3 +1,31 @@
-<template>
-  <h1 class="text-3xl font-bold">Hello, Astro with Tailwind!</h1>
-</template>
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+---
+<Layout title="Welcome to Astro.">
+	<main>
+		<Header title="AstroBuild.tips" />
+		<Hero />
+		<ul role="list" class="link-card-grid">
+			<Card title="Good Morning Saori" time="2024-05-07" tags="javascript" />
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
+

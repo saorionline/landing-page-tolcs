@@ -5,12 +5,19 @@
     "dev": "astro dev",
     "build": "astro build"
   },
-  "keywords": ["Astro"],
+  "keywords": [
+    "Astro"
+  ],
   "author": "Saori Bogart <saoribogart@gmail.com>",
   "license": "MIT",
   "description": "A basic Astro project",
   "devDependencies": {
-    "astro": "^4.11.3"
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "astro": "^4.11.3",
+    "typescript": "^5.5.3"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",

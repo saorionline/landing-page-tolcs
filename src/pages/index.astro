@@ -4,11 +4,11 @@ import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 
-const allPosts = await Astro.glob('../content/*.md');
+const allPosts = await Astro.glob('../content/tips/*.md');
 ---
 <Layout title="SaoriBogart">
 	<main>
-		<Header title="AstroBuild.tips" />
+		<Header title="Pluricator" />
 		<Hero />
 		<ul role="list" class="link-card-grid">
 			{

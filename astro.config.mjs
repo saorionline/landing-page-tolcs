@@ -6,5 +6,11 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [tailwind(), mdx(), sitemap()]
+  integrations: [tailwind(), mdx(), sitemap()],
+  markdown: {
+    rehypePlugins: [
+      // ... other rehype plugins
+      ['remark-smartypants', { locale: 'en-US' }], // Enable smart quotes
+    ],
+  },
 });

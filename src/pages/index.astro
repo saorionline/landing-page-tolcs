@@ -4,7 +4,7 @@ import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 
-const allPosts = await Astro.glob('../content/*.md');
+const allPosts = await Astro.glob("../content/tips/*.md");
 ---
 <Layout title="SaoriBogart">
 	<main>
@@ -17,6 +17,7 @@ const allPosts = await Astro.glob('../content/*.md');
 					title={item?.frontmatter?.title}
 					time={item?.frontmatter?.pubDate}
 					tags={item?.frontmatter?.tags}
+
 					/>
 
 				))

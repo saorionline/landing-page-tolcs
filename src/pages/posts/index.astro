@@ -10,14 +10,7 @@ const posts = (await getCollection("tips")).sort(
 );
 console.log(posts);
 ---
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-<body>
     <Layout title="Welcome to Astro.">
         <main>
             <Header title="AstroBuild.tips" />
@@ -36,6 +29,19 @@ console.log(posts);
             </ul>
         </main>
     </Layout>
+    <style>
+        main {
+            margin: auto;
+            padding: 1.5rem;
+            max-width: 60ch;
+        }
+    
+        .link-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+            gap: 1rem;
+            padding: 0;
+        }
+    </style>
+    
 
-</body>
-</html>

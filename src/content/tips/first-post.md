@@ -2,7 +2,9 @@
 title: "Single Employee's Salary History"
 pubDate: 02-07-2024
 description: "By analyzing salary data like this Enterprise Samples's work history, the organization gains insights into salary trends within the company."
+image: "https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 tags: ["Data Transparency","Compensation Planning","Salary Trends"]
+layout: "../../layouts/Posts.astro"
 ---
 
 # Data Transparency:

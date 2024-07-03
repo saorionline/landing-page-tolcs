@@ -2,7 +2,10 @@
 title: "Powerpuff Origins"
 pubDate: 02-07-2024
 description: "Deep within a bustling city, science and sweetness collide to create the ultimate superhero team – the Powerpuff Girls!"
+image: "https://images.pexels.com/photos/25584126/pexels-photo-25584126/free-photo-of-comida-madera-soleado-gafas-de-sol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 tags: ["Comic","Fun","Creative"]
+layout: "../../layouts/Posts.astro"
+
 ---
 In the heart of Townsville, Professor Utonium, a genius with a touch of whimsy, toiled away in his top-secret lab. His goal wasn't a hair growth formula or a hiccup cure, but something far more remarkable – a team of pint-sized superheroes! With a careful mix of Sugar, Spice, and Everything Nice, combined with the mysterious Chemical X, he concocted a revolutionary formula. Suddenly, the lab erupted in a brilliant flash, and when the dust cleared, three adorable girls stood before him.
 

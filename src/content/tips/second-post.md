@@ -1,9 +1,9 @@
 ---
-title: "Powerpuff Origins"
+title: "Powerpuff Origins, In the heart of Townsville..."
 pubDate: 02-07-2024
 description: "Deep within a bustling city, science and sweetness collide to create the ultimate superhero team – the Powerpuff Girls!"
 image: "https://images.pexels.com/photos/25584126/pexels-photo-25584126/free-photo-of-comida-madera-soleado-gafas-de-sol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-tags: ["Comic","Fun","Creative"]
+tags: ["Comic","Fun","Creative", "Superpower", "Fiction", "Entertainment"]
 layout: "../../layouts/Posts.astro"
 
 ---

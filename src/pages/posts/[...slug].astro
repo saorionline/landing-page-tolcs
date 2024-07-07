@@ -6,7 +6,7 @@ import Footer from "../../components/Footer.vue";
 import Social from "../../components/Social.svelte";
 
 export async function getStaticPaths() {
-	const posts = await getCollection("tips");
+	const posts = await getCollection('tips');
 	return posts.map((post) => ({
 		params: { slug: post.slug },
 		props: post,
@@ -19,7 +19,7 @@ const { Content } = await post.render();
 
 <Base title="AstroBuild.tips">
 	<Header title="AstroBuild.tips"/>
-	<Content/>
+	<Content />
 	<Footer/>
 	<Social/>
 </Base>

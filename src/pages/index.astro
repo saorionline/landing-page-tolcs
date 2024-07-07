@@ -4,13 +4,15 @@ import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import { getCollection } from "astro:content";
+import Footer from "../components/Footer.vue";
+import Social from "../components/Social.svelte";
 
 const posts = (await getCollection('tips')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );---
-<Layout title="AstroBuild.tips">
+<Layout title="We say it all.">
 	<main>
-		<Header title="AstroBuild.tips" />
+		<Header title="Pluricator Home" />
 		<Hero />
 		<ul role="list" class="link-card-grid">
 			{
@@ -25,6 +27,8 @@ const posts = (await getCollection('tips')).sort(
 				))
 			}
 		</ul>
+		<Social/>
+		<Footer/>
 	</main>
 </Layout>
 

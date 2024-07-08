@@ -1,7 +1,27 @@
 <template>
 	<footer aria-label="Site Footer" class="bg-gray-100">
 		<div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+			<ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 mx-1 my-4" style="margin-bottom:62px">
+				<li>
+					<a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+						About
+					</a>
+				</li>
+
+				<li>
+					<a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+						Careers
+					</a>
+				</li>
+
+				<li>
+					<a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+						History
+					</a>
+				</li> 
+			</ul>
 			<div class="flex justify-center text-teal-600">
+				
 				<svg
 					class="h-8"
 					viewBox="0 0 118 24"

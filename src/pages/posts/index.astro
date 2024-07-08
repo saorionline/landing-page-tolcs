@@ -5,14 +5,15 @@ import Header from "../../components/Header.astro";
 import Hero from "../../components/Hero.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("tips")).sort(
+const posts = (await getCollection('tips')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
+<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 
-    <Layout title="Welcome to Astro.">
-        <main>
-            <Header title="AstroBuild.tips" />
+    <Layout title="We say it all.">
+        <main >
+            <Header title="Pluricator Posts" />
             <Hero />
             <ul role="list" class="link-card-grid">
                 {
@@ -29,4 +30,18 @@ const posts = (await getCollection("tips")).sort(
         </main>
     </Layout>
 
-
+    <style>
+        main {
+            margin: auto;
+            padding: 1.5rem;
+            max-width: 60ch;
+            font-family: "Lexend", sans-serif;
+        }
+    
+        .link-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+            gap: 1rem;
+            padding: 0;
+        }
+    </style>

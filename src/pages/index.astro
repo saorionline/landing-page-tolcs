@@ -3,26 +3,32 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
+import { getCollection } from "astro:content";
+import Footer from "../components/Footer.vue";
+import Social from "../components/Social.svelte";
 
-const allPosts = await Astro.glob("../content/tips/*.md");
----
-<Layout title="SaoriBogart">
-	<main>
-		<Header title="AstroBuild.tips" />
+const posts = (await getCollection('tips')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);---
+<Layout title="We say it all.">
+	<main class="font-sans">
+		<Header title="Pluricator Home" />
 		<Hero />
 		<ul role="list" class="link-card-grid">
 			{
-				allPosts.map((item) => (
+				posts.map((post) => (   // Use post from allPosts array
 					<Card 
-					title={item?.frontmatter?.title}
-					time={item?.frontmatter?.pubDate}
-					tags={item?.frontmatter?.tags}
+							title={post.data.title}
+                            time={post.data.pubDate}
+                            tags={post.data.tags}
+                            slug={post.slug}
 
 					/>
-
 				))
 			}
 		</ul>
+		<Social/>
+		<Footer/>
 	</main>
 </Layout>
 
@@ -30,7 +36,24 @@ const allPosts = await Astro.glob("../content/tips/*.md");
 	main {
 		margin: auto;
 		padding: 1.5rem;
+		font-family: "Lexend", sans-serif;
+	}
+		/* Max width 60ch for very small screens */
+	@media (max-width: 600px) {
+	main {
 		max-width: 60ch;
+		font-family: "Lexend", sans-serif;
+
+	}
+	}
+
+	/* Max width 145ch for larger screens */
+	@media (min-width: 601px) { /* Adjust breakpoint as needed */
+	main {
+		max-width: 145ch;
+		font-family: "Lexend", sans-serif;
+
+	}
 	}
 
 	.link-card-grid {

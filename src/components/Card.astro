@@ -22,7 +22,6 @@ const { title, time, tags, slug } = Astro.props;
 				{title}
 			</h3>
 		</a>
-		{console.log(`Slug value: ${slug}`)}
 		<div class="mt-4 flex flex-wrap gap-1">
 			{
 				tags.map((item) => (
@@ -34,3 +33,4 @@ const { title, time, tags, slug } = Astro.props;
 		</div>
 	</div>
 </article>
+

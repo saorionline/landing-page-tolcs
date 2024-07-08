@@ -8,6 +8,7 @@ import svelte from '@astrojs/svelte';
 
 // https://astro.build/config
 export default defineConfig({
+  css: ['global.css'], // Add your global CSS file here
   site: 'https://example.com',
   integrations: [tailwind(), mdx(), react(), vue(), svelte()],
   markdown: {

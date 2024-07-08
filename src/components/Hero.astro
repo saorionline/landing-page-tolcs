@@ -1,13 +1,54 @@
-<p class="instructions">
-	To get started, open the directory <code>src/pages</code> in your project.<br
-	/>
-	<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-</p>
+
+
+<div class="instructions-main" >
+
+	<div class="h-48 overflow-hidden relative mb-8">
+		<img
+		src="https://images.pexels.com/photos/7947785/pexels-photo-7947785.jpeg?auto=compress&cs=tinysrgb&w=1200"
+		alt="Cristales para sanar y sentirse bien"
+		loading="lazy"
+		class="w-full h-full object-cover absolute top-0 left-0"
+		/>
+	</div>	
+	<div>
+		<p class="text-gray-700">Los cristales han cautivado a la humanidad durante siglos, y su belleza y potencial para el bienestar siguen intrigándonos hoy en día. Si siente curiosidad por los cristales y sus usos, este resumen explora una variedad de libros recientes que le guiarán en su viaje por el místico mundo de los cristales.</p>
+	</div>
+</div>
+
+<div class="container">
+	<div class="column" style="flex-2;" >
+		<h1>Desvelando la mística de los cristales</h1>
+		<p  class="font-sans instructions">Los cristales, esas piedras preciosas brillantes que han adornado a guerreros y místicos a lo largo de los siglos, no sólo son exquisitos a la vista; también se cree que poseen poderosas propiedades curativas. La historia de los cristales se remonta a siglos atrás, cuando estas piedras preciosas se utilizaban por sus supuestos beneficios metafísicos y terapéuticos.</p>
+
+		<h1>Historia de los Cristales</h1>
+		<p class="font-sans instructions">Desde las civilizaciones antiguas hasta las prácticas espirituales modernas, los cristales han sido venerados por su belleza y su capacidad para canalizar la energía. A lo largo de la historia, los cristales se han utilizado para adornar a la realeza, mejorar los rituales espirituales y ofrecer protección en la batalla. Los curanderos y chamanes han utilizado los cristales para ayudar en la curación física y emocional, aprovechando la energía de las piedras para restaurar el equilibrio y la armonía.</p>
+	</div>
+	<div class="column" >
+		<h1>Uso moderno de los Cristales</h1>
+		<p class="font-sans instructions">En el vertiginoso mundo actual, muchos recurren a los cristales en busca de una conexión con la naturaleza y un medio para alcanzar la paz y la armonía interiores. La cristaloterapia ha ganado popularidad por su potencial para promover el bienestar general aprovechando las energías de estas piedras preciosas radiantes.</p>
+
+		<h1>Uso moderno de los Cristales</h1>
+		<p class="font-sans instructions">En el vertiginoso mundo actual, muchos recurren a los cristales en busca de una conexión con la naturaleza y un medio para alcanzar la paz y la armonía interiores. La cristaloterapia ha ganado popularidad por su potencial para promover el bienestar general aprovechando las energías de estas piedras preciosas radiantes.</p>
+	</div>
+</div>
+		<h1>Un viaje a través de la historia y los usos modernos</h1>
 
 <style>
+	p{
+		font-family: "Lexend", sans-serif;
+		font-weight: 300;
+		padding: 20px;
+	}
+	.instructions-main {
+		line-height: 1.6;
+		margin: 6rem 2rem 0 2rem;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		border-radius: 0.4rem;
+	}
 	.instructions {
 		line-height: 1.6;
-		margin: 1rem 0;
+		margin: 6rem 0;
 		border: 1px solid rgba(var(--accent), 25%);
 		background-color: white;
 		padding: 1rem;
@@ -24,4 +65,41 @@
 	.instructions strong {
 		color: rgb(var(--accent));
 	}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap to next line on smaller screens */
+}
+
+.column {
+  padding: 1rem; /* Add some padding for better readability */
+  margin: 0.5rem; /* Add some margin between columns */
+}
+
+@media (max-width: 600px) {
+		.container {
+			flex-direction: column; /* Stack columns on top of each other for smaller screens */
+		}
+		.column {
+			flex: 1; /* Make columns take up full width on smaller screens */
+		}
+		main {
+				max-width: 60ch;
+			}
+	}
+
+	/* Max width 145ch for larger screens */
+	@media (min-width: 601px) { /* Adjust breakpoint as needed */
+	main {
+		max-width: 145ch;
+	}
+	.column {
+    		flex: 2; /* Set column width as specified in Astro code */
+  		}
+	h1 {
+		font-family: "Lexend", sans-serif;
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+	}
+
 </style>

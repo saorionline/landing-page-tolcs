@@ -9,9 +9,9 @@ layout: "../../layouts/Posts.astro"
 
 <div class="text-3xl font-bold my-8"> Sumérgete en el mundo de los cristales: Reseñas de libros</div>
 
-Los cristales han cautivado a la humanidad durante siglos. Su belleza y potencial para el bienestar siguen despertando interés hoy en día. Si sientes curiosidad por los cristales y sus usos, este resumen explora una variedad de libros recientes para guiarte en tu viaje al mundo de los cristales.
+Los cristales han cautivado a la humanidad durante siglos. Su belleza y potencial para el bienestar siguen despertando interés hoy en día. Si sientes curiosidad por los cristales y sus usos, esta tienda explora una variedad de estudios recientes para guiarte en tu viaje al mundo de los cristales.
 
-<div class="text-3xl font-bold my-8"> Desvelando la mística de los cristales: Un viaje a través de la historia y el uso moderno</div>
+<div class="text-3xl font-bold my-8"> Desvela la mística de los cristales: Un viaje a través de la historia y el uso moderno</div>
 
 Los cristales, esas piedras preciosas brillantes que han adornado a guerreros y místicos a lo largo de los siglos, no sólo son exquisitos a la vista; también se cree que poseen poderosas propiedades curativas. La historia de los cristales se remonta a siglos atrás, cuando estas piedras preciosas se utilizaban por sus supuestos beneficios metafísicos y terapéuticos.
 

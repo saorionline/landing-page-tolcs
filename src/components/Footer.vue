@@ -4,19 +4,19 @@
 			<ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 mx-1 my-4" style="margin-bottom:62px">
 				<li>
 					<a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-						About
+						Próximamente Sobre Nosotros
 					</a>
 				</li>
 
 				<li>
 					<a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-						Careers
+						Próximamente Accesorios
 					</a>
 				</li>
 
 				<li>
 					<a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-						History
+						Próximamente Origen Citrino
 					</a>
 				</li> 
 			</ul>
@@ -74,8 +74,7 @@
 			<p
 				class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500"
 			>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-				consequuntur amet culpa cum itaque neque.
+			Desvelando la mística de los cristales. Bogotá, Colombia @2024
 			</p>
 
 		</div>

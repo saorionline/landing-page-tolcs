@@ -15,19 +15,21 @@ const posts = (await getCollection('tips')).sort(
 	<main class="font-sans">
 		<Header title="Alas de Libélula" />
 		<Hero />
-		<ul role="list" class="link-card-grid">
-			{
-				posts.map((post) => (   // Use post from allPosts array
-					<Card 
-							title={post.data.title}
-                            time={post.data.pubDate}
-                            tags={post.data.tags}
-                            slug={post.slug}
+		<div class="container mx-auto max-w-4xl px-16">
+				<ul role="list" class="link-card-grid">
+					{
+						posts.map((post) => (   // Use post from allPosts array
+							<Card 
+									title={post.data.title}
+									time={post.data.pubDate}
+									tags={post.data.tags}
+									slug={post.slug}
 
-					/>
-				))
-			}
-		</ul>
+							/>
+						))
+					}
+				</ul>
+		</div>		
 		<Social/>
 		<Footer/>
 	</main>
@@ -61,7 +63,7 @@ const posts = (await getCollection('tips')).sort(
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
-		padding: 0;
+		padding: 30px;
 	}
 </style>
 

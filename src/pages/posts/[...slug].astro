@@ -17,11 +17,20 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Base title="We say it all.">
+<Base title="Cristales que sanan">
 	<a href="/" >  
-	<Header title="Pluricator"/>
+	<Header title="Alas de Libélula"/>
 	</a>
 	<Content />
 	<Social/>
 	<Footer/>
 </Base>
+
+<style>
+	.text-gradient {
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  background-size: 400%;
+	  background-position: 0%;
+	}
+  </style>

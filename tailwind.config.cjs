@@ -4,7 +4,10 @@ module.exports = {
 		extend: {
 			borderWidth: {
 				'hair': '1px', // Adjust the thickness as needed (smaller values for thinner lines)
-			  }
+			  },
+			textColor: {
+				'gradient': 'var(--accent-gradient)', // Replace with your actual gradient variable name
+			  },
 		},
 	},
 	plugins: [],
